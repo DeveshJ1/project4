@@ -1,17 +1,21 @@
 # project4
-You are going to write a program that uses our new data structures, stack and queue, to explore a maze and, hopefully, find a way out of it. There are many algorithms that use different data structures and different strategies to explore mazes. In this assignment you will try two such approaches. In both of these approaches you will start from some initial position within the maze and evaluate the neighboring spaces until either you find a way out, or you discover that there is no way out. The rough outline of both approaches is to examine spaces around the current position and decide which need to be examined further and which definitely do not lead to an exit (more details below in the algorithm description).
+The goal of this project is to implement a program that finds all solutions to a number puzzle. The solution that you will implement has to use a recursive algorithm to find all the ways through the puzzle.
+
+The puzzle uses an array of positive integers. The objective is to find a path from index zero to the last index in the array. At each step we need to know the distance to be traveled and the direction. Each entry in the array is a number indicating the distance to be traveled on this particular leg of the path. The player (your program) needs to decide the direction (if the move should be made to the right or to the left).
+
+Here is an example. In each step the bold number indicates the current location. The starting position is always at index 0.
+
+Way Finder Example
+
+This puzzle has more than this one solution. The directions for each step can be altered to produce other solutions.
 
 
-Main goal: the main goal of this programming project is to get out of a maze.
 
-The other goal of this programming project is for you to master (or at least get practice on) the following tasks:
 
-working with multi-file programs
-writing classes
-implementing existing interfaces
-working with existing code
-implementing your own doubly linked list
-implementing your own stack and queue
+The goal of this programming project is for you to master (or at least get practice on) the following tasks:
+
+designing a program from scratch (deciding what classes and method should be part of the program)
+writing recursive functions
 
 PROGRAM USAGE
 The program is started from the command line (or run within an IDE). It expects two command line arguments.
